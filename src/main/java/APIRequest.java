@@ -4,8 +4,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import static io.restassured.RestAssured.given;
 
 public class APIRequest {
-    
-    private String API_URL = "https://stellarburgers.nomoreparties.site/api";
+    private final String API_URL = "https://stellarburgers.nomoreparties.site/api";
 
     private final String name = RandomStringUtils.randomAlphabetic(7);
     private final String email = RandomStringUtils.randomAlphanumeric(7)+"@ya.ru";
